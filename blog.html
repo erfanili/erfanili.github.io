@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>blog</title>
-        <style>
-            body {
-                font-family: 'Times New Roman', Times, serif;
-                margin: 20px
-            }
-            h1 {
-                text-align: center;
-            }
-            .post {
-                margin: 20px 0;
-                padding: 10px;
-                border-bottom: 1px solid #ddd;
-            }
-            .post-title {
-                font-size: 1.2em;
-                font-weight: bold;
-            }
-            .post-date {
-                font-size: 0.9em;
-                color: #777;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>ai blog</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-    <body>
-        <h1>My AI Blog</h1>
-        <p>I will post notes on recent trends in AI and machine learning in this page.</p>
-        <div class="post">
-            <a class=post-title href="posts/post1.html">Post1</a>
-            <div class="post-data">Published on September 24, 2024</div>
-        </div>
-        <a href="index.html">Back to Home</a>
     </body>
+        <div class="header-image"></div>
+        <div class="wrapper">
+            <div class="nav-bar" id="nav-bar"></div>
+            <div class="main-container">
+                <div class="left-column">
+                    <h2>AI Blog</h2>
+                </div>
+                <div class="right-column" id="right-column"></div>
+            </div>
+            
+        </div>
+        <script>
+            function loadHTML(elementId, filePath) {
+                const element = document.getElementById(elementId);
+                fetch(filePath)
+                    .then(response => response.text())
+                    .then(data => {
+                        element.innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading HTML:', error));
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                loadHTML('nav-bar', 'nav-bar.html');
+                loadHTML('right-column', 'right-column.html');
+            });
+        </script>
+    <body>
 </html>
