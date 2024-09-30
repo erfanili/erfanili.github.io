@@ -108,4 +108,7 @@ footer {
         margin: 0;
         padding: 0 ;
     }
+    .header-image {
+        background-size: 100% auto; /* Set to 100% for smaller screens */
+    }
 }
