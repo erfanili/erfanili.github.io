@@ -72,12 +72,12 @@ footer {
     text-decoration: none;
     flex: 1;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 .profile-photo {
     width: 250px;
     height: auto;
-    border-radius: 5%;
+    border-radius: 2%;
     border: 1px solid #333;
 }
 .about-me-photo {
@@ -100,15 +100,16 @@ footer {
 }
 .social-links {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 150px;
 }
 .social-links a {
     text-decoration: none;
     display: block;
-    justify-content: left;
+    justify-content;
     margin: 10px;
     color: #333;
     font-size: 24px;
+    text-align: left;
 
 }
 .social-links a:hover {
