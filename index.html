@@ -1,43 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Welcome to My Personal Web Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erfan Esmaeili Fakhabi — LLM Inference & Efficiency Engineer</title>
+  <meta name="description" content="Physics PhD → AI/ML engineer focused on LLM inference efficiency: p95 latency, TTFT, Throughput/$, quantization, caching, and reliability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .dark .glass { background: rgba(17,24,39,0.7); }
+    .tag { @apply inline-flex items-center rounded-full border px-2 py-1 text-xs font-medium; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-800 dark:text-slate-100">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/70 glass">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-extrabold tracking-tight text-xl">Erfan E. Fakhabi</a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="#projects" class="hover:opacity-80">Projects</a>
+        <a href="#papers" class="hover:opacity-80">Papers</a>
+        <a href="#skills" class="hover:opacity-80">Skills</a>
+        <a href="#contact" class="hover:opacity-80">Contact</a>
+      </nav>
+      <div class="flex gap-2">
+        <a href="https://github.com/erfanili" class="rounded-full border px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/erfanili" class="rounded-full bg-slate-900 text-white px-3 py-1.5 text-sm hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </header>
 
-    </head>
-    <body>
-        <!-- <div class="header-image"></div> -->
-        <div class="wrapper">
-            <div class="nav-bar" id="nav-bar"></div>
-            <div class="main-container">
-                <!-- <div class="left-column">
-                    <h2>Welcome to My Personal Web Page!</h2>
+  <!-- HERO -->
+  <section class="relative">
+    <div class="absolute inset-0 -z-10 h-80 bg-gradient-to-b from-indigo-100/60 via-transparent to-transparent dark:from-indigo-900/20"></div>
+    <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7">
+            <img src="images/portrait.jpg" alt="Erfan profile photo"
+       class="w-32 h-32 rounded-full border-2 border-slate-300 dark:border-slate-700 shadow mb-6">
 
-                </div> -->
-                <div class="right-column" id="right-column"></div>
-            </div>
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+            LLM <span class="text-indigo-600">Inference & Efficiency</span> Engineer
+          </h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
+            Physics PhD → AI Systems Engineer. I build fast, scalable, and cost-efficient infrastructure for serving large language models in production. My focus is on making LLMs smoother, cheaper, and more reliable across latency, throughput, and deployment robustness. I work with tools like vLLM, TGI, and TensorRT-LLM to turn cutting-edge models into real-world products.</p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-500">See Projects</a>
+            <a href="https://drive.google.com/file/d/16g_NgSR1jErh6c5c3SPHUl-F8KJ16xaR/view?usp=drive_link" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Download Resume</a>
+          </div>
         </div>
-                    
-            
+        <div class="md:col-span-5">
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass shadow-sm">
+            <h2 class="font-semibold">Recent Highlights</h2>
+            <ul class="mt-3 space-y-3 text-sm">
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span><span><strong>Talk at Purdue RCAC AI day</strong> Internal Mechanics of LLMs</span></li>
+   </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <script>
-            function loadHTML(elementId, filePath) {
-                const element = document.getElementById(elementId);
-                fetch(filePath)
-                    .then(response => response.text())
-                    .then(data => {
-                        element.innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading HTML:', error));
-            }
-        
-            document.addEventListener('DOMContentLoaded', () => {
-                loadHTML('nav-bar', 'nav-bar.html');
-                loadHTML('right-column', 'right-column.html');
-            });
-        </script>
-    </body>
+  <!-- PROJECTS -->
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-12">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Selected Projects</h2>
+      <a class="text-sm hover:opacity-80" href="https://github.com/erfanili" target="_blank" rel="noreferrer">View all →</a>
+    </div>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
+        <h3 class="font-semibold">LLM Inference Lab</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Reproducible serving lab (vLLM/TGI) with FastAPI gateway, async load-gen, structured logs, and plots for TTFT, p95/p99, tokens/s, Throughput/$.</p>
+        <ul class="mt-3 text-xs space-y-1">
+          <li>• <strong>p95 ↓ 25%</strong> @ 50 RPS via continuous batching + KV reuse</li>
+          <li>• <strong>Cost ↓ 40%</strong> with INT8/INT4; ≤2% quality delta</li>
+        </ul>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">vLLM</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">TGI</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">FastAPI</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">Docker</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sm underline" href="https://github.com/erfanili/inference-optimizaiton-benchmark" target="_blank" rel="noreferrer">Code</a>
+          <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Demo</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
+        <h3 class="font-semibold">RAG System (Ask Dan)</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Deployed retrieval-augmented QA engine with Milvus + reranker + Llama; latency-aware reranking and cost controls.</p>
+        <ul class="mt-3 text-xs space-y-1">
+          <li>• P95 latency budget enforced; observability dashboard</li>
+          <li>• Deployed with Docker; CI check for eval set</li>
+        </ul>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">Milvus</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">OpenAI text encoder</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">Streamlit</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sm underline" href="https://github.com/erfanili/rag-wwi-history-research" target="_blank" rel="noreferrer">Code</a>
+          <a class="text-sm underline" href="https://ask-dan-wwi.streamlit.app/" target="_blank" rel="noreferrer">Demo</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
+        <h3 class="font-semibold">Quantization Frontier</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">FP16 vs INT8/INT4 (AWQ/GPTQ) on 200-prompt eval; quality–cost curves and guidance for production knobs.</p>
+        <ul class="mt-3 text-xs space-y-1">
+          <li>• ≤2% quality delta with 35–45% cost reduction</li>
+          <li>• Config-driven runs; one-command reproduce</li>
+        </ul>
+        <div class="mt-4 flex gap-2 text-xs">
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">AWQ</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">GPTQ</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">Eval Harness</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sm underline" href="https://github.com/USERNAME/llm-quant-frontier" target="_blank" rel="noreferrer">Code</a>
+          <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Report</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PAPERS -->
+  <section id="papers" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Papers & Preprints</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass">
+        <h3 class="font-semibold">Text Embedding is Not All You Need: Attention Control for Text-to-Image
+Semantic Alignment with Text Self-Attention Maps (CVPR 2024)</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Length-aware batching + KV-cache policy that improves p95 at fixed Throughput/$; single-GPU, reproducible artifact.</p>
+        <div class="mt-3 flex gap-3 text-sm">
+          <a class="underline" href="https://t-sam-diffusion.github.io/" target="_blank" rel="noreferrer">Project page</a>
+          <a class="underline" href="https://arxiv.org/pdf/2411.15236" target="_blank" rel="noreferrer">PDF</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Serving & Performance</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Continuous batching, KV reuse/eviction, TTFT, p95/p99, tokens/s, load gen, backpressure.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Optimization</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">INT8/INT4 (AWQ/GPTQ), speculative decoding, caching (exact/semantic), engine selection.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Systems & Infra</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">FastAPI, Docker, basic K8s autoscaling, OpenTelemetry traces, Prometheus/Grafana.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Tooling</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">vLLM, TGI, TensorRT-LLM, PyTorch, Milvus, Sentence-Transformers.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Languages</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Python (Fluent), Bash; learning C++/CUDA for runtime plugins.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+        <h4 class="font-semibold">Background</h4>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">PhD in Theoretical Physics (GR); systems thinking, modeling, reproducible research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white/50 dark:bg-slate-900/50 glass">
+      <h2 class="text-2xl font-extrabold">Contact</h2>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Open to AI Infra / ML Platform / LLM Inference roles (FTE or contract). Email: <a class="underline" href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></p>
+    </div>
+    <footer class="mt-10 pb-12 text-center text-xs text-slate-500">© <span id="y"></span> Erfan Esmaeili Fakhabi — Built with Tailwind on GitHub Pages</footer>
+  </section>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
 </html>
