@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Long Reads I Loved</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .dark .glass { background: rgba(17,24,39,0.7); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-800 dark:text-slate-100">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/70 glass">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="font-extrabold tracking-tight text-xl">Erfan E. Fakhabi</a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="index.html#projects" class="hover:opacity-80">Projects</a>
+        <a href="index.html#papers" class="hover:opacity-80">Papers</a>
+        <a href="index.html#skills" class="hover:opacity-80">Skills</a>
+        <a href="index.html#contact" class="hover:opacity-80">Contact</a>
+        <a href="til.html" class="hover:opacity-80">TIL</a>
+        <a href="longreads.html" class="text-indigo-600 font-semibold">Long Reads</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="absolute inset-0 -z-10 h-48 bg-gradient-to-b from-indigo-100/60 via-transparent to-transparent dark:from-indigo-900/20"></div>
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h1 class="text-3xl md:text-4xl font-extrabold">Long Reads I Loved</h1>
+      <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl">
+        A small library of books and long-form technical materials that shaped my thinking. I revisit these often.
+      </p>
+    </div>
+  </section>
+
+  <!-- ENTRIES -->
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid gap-6 md:grid-cols-2">
+
+      <!-- Book 1 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow flex gap-4">
+        <img src="images/cpp.jpg" alt="A Tour of C++ cover" class="w-24 h-36 object-cover rounded-md border border-slate-300 dark:border-slate-700">
+        <div>
+          <h3 class="font-semibold text-lg">A Tour of C++</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300 italic">Bjarne Stroustrup</p>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            A compact yet deep dive into modern C++. Gave me intuition for idioms, memory control, and the evolution of the language.
+          </p>
+        </div>
+      </article>
+
+      <!-- Book 2 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow flex gap-4">
+        <img src="images/os.jpg" alt="Operating Systems cover" class="w-24 h-36 object-cover rounded-md border border-slate-300 dark:border-slate-700">
+        <div>
+          <h3 class="font-semibold text-lg">Operating Systems: Three Easy Pieces</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300 italic">Remzi & Andrea Arpaci-Dusseau</p>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            One of the clearest resources on systems programming. Taught me to see memory, concurrency, and scheduling as deeply human-designed tools.
+          </p>
+        </div>
+      </article>
+
+      <!-- Add more entries here -->
+             <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow flex gap-4">
+        <img src="images/networking.png" alt="Computer Networking cover" class="w-24 h-36 object-cover rounded-md border border-slate-300 dark:border-slate-700">
+        <div>
+          <h3 class="font-semibold text-lg">Computer Networking: A Top-Down Approach</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300 italic">James F. Kurose & Keith W. Ross</p>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            A rare textbook that feels like a guided tour through the Internet’s architecture. Its top-down narrative helped me truly visualize how protocols and systems interlock.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-10 pb-12 text-center text-xs text-slate-500">
+    © <span id="y"></span> Erfan Esmaeili Fakhabi — Built with Tailwind on GitHub Pages
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

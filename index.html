@@ -47,14 +47,16 @@
        class="w-32 h-32 rounded-full border-2 border-slate-300 dark:border-slate-700 shadow mb-6">
 
           <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-            LLM <span class="text-indigo-600">Inference & Efficiency</span> Engineer
+            Machine Learning Engineer
           </h1>
-          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-            Physics PhD → AI Systems Engineer. I build fast, scalable, and cost-efficient infrastructure for serving large language models in production. My focus is on making LLMs smoother, cheaper, and more reliable across latency, throughput, and deployment robustness. I work with tools like vLLM, TGI, and TensorRT-LLM to turn cutting-edge models into real-world products.</p>
-
-          <div class="mt-8 flex flex-wrap gap-3">
+Machine learning engineer and researcher experienced in model training, evaluation, and deployment.
+My background in theoretical physics informs how I analyze and develop AI systems.          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
+<div class="mt-8 flex flex-wrap gap-3">
             <a href="#projects" class="rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-500">See Projects</a>
-            <a href="https://drive.google.com/file/d/16g_NgSR1jErh6c5c3SPHUl-F8KJ16xaR/view?usp=drive_link" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Download Resume</a>
+            <a href="https://drive.google.com/file/d/16g_NgSR1jErh6c5c3SPHUl-F8KJ16xaR/view?usp=drive_link"class="rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-500">Download Resume</a>
+            <a href="til.html" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Things I Learned This Week</a>
+         <a href="longreads.html" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Long Reads I Enojyed</a>
+         
           </div>
         </div>
         <div class="md:col-span-5">
@@ -78,12 +80,12 @@
     <div class="mt-6 grid md:grid-cols-3 gap-6">
       <!-- Card 1 -->
       <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">LLM Inference Lab</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Reproducible serving lab (vLLM/TGI) with FastAPI gateway, async load-gen, structured logs, and plots for TTFT, p95/p99, tokens/s, Throughput/$.</p>
-        <ul class="mt-3 text-xs space-y-1">
+        <h3 class="font-semibold">LLM Inference Benchmarking</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Comparing LLM inference engines (vLLM, TGI) in latency and throughput.</p>
+        <!-- <ul class="mt-3 text-xs space-y-1">
           <li>• <strong>p95 ↓ 25%</strong> @ 50 RPS via continuous batching + KV reuse</li>
           <li>• <strong>Cost ↓ 40%</strong> with INT8/INT4; ≤2% quality delta</li>
-        </ul>
+        </ul> -->
         <div class="mt-4 flex gap-2 text-xs">
           <span class="tag border-slate-300/70 dark:border-slate-700/70">vLLM</span>
           <span class="tag border-slate-300/70 dark:border-slate-700/70">TGI</span>
@@ -92,17 +94,16 @@
         </div>
         <div class="mt-4 flex gap-3">
           <a class="text-sm underline" href="https://github.com/erfanili/inference-optimizaiton-benchmark" target="_blank" rel="noreferrer">Code</a>
-          <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Demo</a>
         </div>
       </article>
 
       <!-- Card 2 -->
       <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">RAG System (Ask Dan)</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Deployed retrieval-augmented QA engine with Milvus + reranker + Llama; latency-aware reranking and cost controls.</p>
+        <h3 class="font-semibold">RAG QA Engine</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Deployed a retrieval-augmented QA engine focused on a history topic.</p>
         <ul class="mt-3 text-xs space-y-1">
-          <li>• P95 latency budget enforced; observability dashboard</li>
-          <li>• Deployed with Docker; CI check for eval set</li>
+          <li>• Database hosted on Milvus Cloud. Two-stage RAG (reranking).</li>
+          <li>. Local version used SPLADE and open source models. The deployed version used OpenAI API for text embeddings and llm inference.</li>
         </ul>
         <div class="mt-4 flex gap-2 text-xs">
           <span class="tag border-slate-300/70 dark:border-slate-700/70">Milvus</span>
@@ -117,20 +118,19 @@
 
       <!-- Card 3 -->
       <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">Quantization Frontier</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">FP16 vs INT8/INT4 (AWQ/GPTQ) on 200-prompt eval; quality–cost curves and guidance for production knobs.</p>
+        <h3 class="font-semibold">QLoRA adaptation</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Adapting open LLMs with LoRA and QLoRA for text summarization.</p>
         <ul class="mt-3 text-xs space-y-1">
-          <li>• ≤2% quality delta with 35–45% cost reduction</li>
-          <li>• Config-driven runs; one-command reproduce</li>
+          <li>• Multi-GPU training</li>
+          <li>• Low Rank Adaptation of quantized models</li>
         </ul>
         <div class="mt-4 flex gap-2 text-xs">
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">AWQ</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">GPTQ</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">Eval Harness</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">QLoRA</span>
+          <span class="tag border-slate-300/70 dark:border-slate-700/70">Llama</span>
         </div>
         <div class="mt-4 flex gap-3">
-          <a class="text-sm underline" href="https://github.com/USERNAME/llm-quant-frontier" target="_blank" rel="noreferrer">Code</a>
-          <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Report</a>
+          <a class="text-sm underline" href="https://github.com/erfanili/qlora-adaptation" target="_blank" rel="noreferrer">Code</a>
+          <!-- <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Report</a> -->
         </div>
       </article>
     </div>
@@ -156,17 +156,17 @@ Semantic Alignment with Text Self-Attention Maps (CVPR 2024)</h3>
   <section id="skills" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-      <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+      <!-- <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
         <h4 class="font-semibold">Serving & Performance</h4>
         <p class="mt-2 text-slate-600 dark:text-slate-300">Continuous batching, KV reuse/eviction, TTFT, p95/p99, tokens/s, load gen, backpressure.</p>
-      </div>
+      </div> -->
       <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
         <h4 class="font-semibold">Optimization</h4>
         <p class="mt-2 text-slate-600 dark:text-slate-300">INT8/INT4 (AWQ/GPTQ), speculative decoding, caching (exact/semantic), engine selection.</p>
       </div>
       <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
         <h4 class="font-semibold">Systems & Infra</h4>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">FastAPI, Docker, basic K8s autoscaling, OpenTelemetry traces, Prometheus/Grafana.</p>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">FastAPI, Docker, basic K8s autoscaling.</p>
       </div>
       <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
         <h4 class="font-semibold">Tooling</h4>
@@ -181,15 +181,16 @@ Semantic Alignment with Text Self-Attention Maps (CVPR 2024)</h3>
         <p class="mt-2 text-slate-600 dark:text-slate-300">PhD in Theoretical Physics (GR); systems thinking, modeling, reproducible research.</p>
       </div>
     </div>
+    
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
     <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white/50 dark:bg-slate-900/50 glass">
       <h2 class="text-2xl font-extrabold">Contact</h2>
-      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Open to AI Infra / ML Platform / LLM Inference roles (FTE or contract). Email: <a class="underline" href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></p>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Email: <a class="underline" href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></p>
     </div>
-    <footer class="mt-10 pb-12 text-center text-xs text-slate-500">© <span id="y"></span> Erfan Esmaeili Fakhabi — Built with Tailwind on GitHub Pages</footer>
+    <footer class="mt-10 pb-12 text-center text-xs text-slate-500">© <span id="y"></span> Erfan Esmaeili Fakhabi</footer>
   </section>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
