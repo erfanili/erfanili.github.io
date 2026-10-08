@@ -1,268 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="Zeb9ndOs88WIw9Iwmd9qCJ8W0sd1vbXi7b1zeluoHQU" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Erfan Esmaeili — Homepage/</title>
-  <meta name="description" content="Physics PhD → AI/ML research engineer" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="Zeb9ndOs88WIw9Iwmd9qCJ8W0sd1vbXi7b1zeluoHQU">
+  <title>Erfan Esmaeili — Generative Models Research, Purdue</title>
+  <meta name="description" content="Erfan Esmaeili is a Ph.D. student in ECE at Purdue (advisor: Qiang Qiu) working on controllable generative models — attention control for text-to-image diffusion (CVPR 2025) and RL fine-tuning of diffusion models. Seeking research scientist internships.">
+  <link rel="canonical" href="https://www.erfanili.dev/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Erfan Esmaeili — Generative Models Research">
+  <meta property="og:description" content="Ph.D. student at Purdue working on controllable diffusion models (CVPR 2025). Seeking research scientist internships.">
+  <meta property="og:url" content="https://www.erfanili.dev/">
+  <meta property="og:image" content="https://www.erfanili.dev/images/portrait.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  :root { color-scheme: light dark; }
-  body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-  .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
-  .dark .glass { background: rgba(17,24,39,0.7); }
-  /* Replace the @apply with vanilla CSS */
-  .tag {
-    display: inline-flex; align-items: center; border-radius: 9999px;
-    border: 1px solid rgba(100,116,139,.5); padding: 0.25rem 0.5rem;
-    font-size: .75rem; font-weight: 600;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Erfan Esmaeili",
+    "alternateName": "Erfan Esmaeili Fakhabi",
+    "url": "https://www.erfanili.dev/",
+    "image": "https://www.erfanili.dev/images/portrait.jpg",
+    "jobTitle": "Ph.D. Student, Electrical and Computer Engineering",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Purdue University" },
+    "alumniOf": [
+      { "@type": "Organization", "name": "Institute for Research in Fundamental Sciences (IPM)" },
+      { "@type": "CollegeOrUniversity", "name": "Sharif University of Technology" }
+    ],
+    "knowsAbout": ["Diffusion models", "Text-to-image generation", "Reinforcement learning", "Generative models", "Deep learning theory"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=7cQiKTIAAAAJ",
+      "https://github.com/erfanili",
+      "https://www.linkedin.com/in/erfanili"
+    ]
   }
-</style>
+  </script>
 </head>
-<body class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-800 dark:text-slate-100">
-  <!-- NAV -->
-  <header class="sticky top-0 z-40 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/70 glass">
-    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-      <!-- <a href="#" class="font-extrabold tracking-tight text-xl">Erfan E. Fakhabi</a> -->
-      <nav class="hidden sm:flex gap-6 text-sm">
-        <a href="#projects" class="hover:opacity-80">Projects</a>
-        <a href="#papers" class="hover:opacity-80">Papers</a>
-        <a href="#skills" class="hover:opacity-80">Skills</a>
-        <a href="#contact" class="hover:opacity-80">Contact</a>
-      </nav>
-      <div class="flex gap-2">
-        <a href="https://github.com/erfanili" class="rounded-full border px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/erfanili" class="rounded-full bg-slate-900 text-white px-3 py-1.5 text-sm hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </div>
-  </header>
+<body>
 
-<!-- HERO -->
-<section class="relative">
-  <div class="absolute inset-0 -z-10 h-80 bg-gradient-to-b from-indigo-100/60 via-transparent to-transparent dark:from-indigo-900/20"></div>
-  <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
-    <div class="grid md:grid-cols-12 gap-8 items-center">
-      <!-- LEFT SIDE: Text -->
-      <div class="md:col-span-6">
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-          Erfan Esmaeili, Ph.D.
-        </h1>
-        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-          Machine learning researcher and engineer experienced in model training, evaluation, and deployment.
-          Ph.D. in theoretical physics.
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Erfan Esmaeili</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#news" class="opt">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#background" class="opt">Background</a>
+      <a href="til.html">Notes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Erfan Esmaeili</h1>
+        <div class="role">
+          Ph.D. student, Electrical &amp; Computer Engineering, <a href="https://www.purdue.edu/">Purdue University</a><br>
+          Advised by Prof. Qiang Qiu · Ph.D. in Theoretical Physics
+        </div>
+
+        <p>
+          I work on <strong>controllable generative models</strong>. My research asks how to steer diffusion models
+          toward what we actually want, both at inference time and through training. Recent work includes
+          training-free <strong>attention control for text-to-image alignment</strong> (CVPR 2025, co-first author) and
+          <strong>reinforcement-learning fine-tuning of diffusion models</strong> with gradient-based influence rewards,
+          so that the synthetic data they generate measurably helps downstream classifiers.
+        </p>
+        <p>
+          Before machine learning, I earned a Ph.D. in theoretical physics and did a postdoc studying wide neural
+          networks near the infinite-width limit with perturbation theory. I take ideas from theory all the way to
+          working PyTorch implementations.
         </p>
 
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#projects" class="rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-500">See Projects</a>
-          <a href="https://drive.google.com/file/d/16g_NgSR1jErh6c5c3SPHUl-F8KJ16xaR/view?usp=sharing"
-             class="rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-500">Download Resume</a>
-          <a href="til.html" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Things I Learned This Week</a>
-          <a href="longreads.html" class="rounded-xl border px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" rel="noreferrer">Long Reads I Enjoyed</a>
+        <div class="callout">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <strong>Seeking Research Scientist / Research Intern positions for Summer 2027.</strong>
+            <span class="muted">U.S. Permanent Resident. No sponsorship required.</span>
+          </div>
+        </div>
+
+        <div class="links">
+          <a class="btn primary" href="https://drive.google.com/file/d/1yZKd-nN69lcCkBY1bceKqk0jJnw39oGI/view?usp=sharing" target="_blank" rel="noopener">CV (PDF)</a>
+          <a class="btn" href="mailto:erfan.esmaeili.f@gmail.com">Email</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="https://github.com/erfanili" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/erfanili" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
 
-      <!-- RIGHT SIDE: Big Image -->
-      <div class="md:col-span-6">
-        <img src="images/erfan-large.png"
-             alt="Erfan Esmaeili"
-             class="w-full rounded-2xl border border-slate-200 dark:border-slate-800 shadow-lg object-cover max-h-[400px]">
+      <img class="hero-photo" src="images/erfan.jpg" alt="Photo of Erfan Esmaeili" width="240" height="300">
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <div class="wrap">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Oct 2026</time><span>Looking for <strong>research scientist internships</strong> for Summer 2027. Feel free to <a href="mailto:erfan.esmaeili.f@gmail.com">reach out</a>.</span></li>
+        <li><time>Jul 2026</time><span>New preprint: <a href="https://arxiv.org/abs/2607.12464">Steering Diffusion Models via Class-Contrastive Influence for Few-Shot Medical Classification</a>.</span></li>
+        <li><time>Dec 2025</time><span>Wrapped up the LLM Model-Identification Platform at Purdue RCAC. It is now used in Purdue's cybersecurity course (CNIT 27000).</span></li>
+        <li><time>Jun 2025</time><span><a href="https://t-sam-diffusion.github.io/">T-SAM</a>, our attention-control method for text-to-image alignment, appeared at <strong>CVPR 2025</strong>.</span></li>
+        <li><time>Aug 2022</time><span>Started my Ph.D. in ECE at Purdue with Prof. Qiang Qiu.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="wrap">
+      <h2>Research</h2>
+      <div class="themes">
+        <div class="theme">
+          <div class="kicker">Inference-time control</div>
+          <h3>Attention control for text-to-image alignment</h3>
+          <p>Cross-attention in diffusion models ignores word relations that the text encoder's self-attention already captures.
+             Steering cross-attention maps toward that structure, with no training, fixes attribute binding and missing objects.</p>
+        </div>
+        <div class="theme">
+          <div class="kicker">Training-time control</div>
+          <h3>RL fine-tuning for useful synthetic data</h3>
+          <p>Class-Contrastive Influence scores how much a generated sample helps a downstream classifier.
+             Used as an RL reward, it fine-tunes diffusion models to produce data that improves few-shot medical classification.</p>
+        </div>
+        <div class="theme">
+          <div class="kicker">Theory</div>
+          <h3>Wide networks beyond the infinite-width limit</h3>
+          <p>Perturbative, field-theory-style computation of finite-width corrections to the near-Gaussian distribution of
+             representations in deep MLPs, following Roberts, Yaida &amp; Hanin.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="wrap">
+      <h2>Publications</h2>
+      <p class="small muted">* equal contribution · Full list on <a href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ">Google Scholar</a></p>
+
+      <article class="pub">
+        <a class="pub-thumb" href="https://t-sam-diffusion.github.io/">
+          <img src="images/tsam-teaser.jpg" alt="T-SAM method overview: cross-attention similarity matrix is steered toward the text self-attention matrix" loading="lazy">
+        </a>
+        <div>
+          <h3>Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps</h3>
+          <div class="authors">Jeeyung Kim*, <b>Erfan Esmaeili*</b>, Qiang Qiu</div>
+          <div class="venue"><span class="badge">CVPR 2025</span>IEEE/CVF Conference on Computer Vision and Pattern Recognition</div>
+          <p class="tldr">A training-free method that aligns cross-attention maps with the text encoder's self-attention, improving attribute binding and object fidelity in Stable Diffusion.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2411.15236">Paper</a>
+            <a href="https://t-sam-diffusion.github.io/">Project page</a>
+            <details>
+              <summary>BibTeX</summary>
+<pre class="bib">@inproceedings{kim2025tsam,
+  title     = {Text Embedding is Not All You Need: Attention Control for
+               Text-to-Image Semantic Alignment with Text Self-Attention Maps},
+  author    = {Kim, Jeeyung and Esmaeili, Erfan and Qiu, Qiang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision
+               and Pattern Recognition (CVPR)},
+  year      = {2025}
+}</pre>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub">
+        <a class="pub-thumb text" href="https://arxiv.org/abs/2607.12464">Diffusion model → synthetic samples → influence reward → RL update</a>
+        <div>
+          <h3>Steering Diffusion Models via Class-Contrastive Influence for Few-Shot Medical Classification</h3>
+          <div class="authors">Jeeyung Kim, <b>Erfan Esmaeili</b>, Qiang Qiu</div>
+          <div class="venue"><span class="badge">arXiv 2026</span>arXiv:2607.12464</div>
+          <p class="tldr">A gradient-based influence score used as an RL reward to fine-tune diffusion models, improving accuracy and robustness over diffusion-augmentation baselines on few-shot medical imaging benchmarks.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2607.12464">Paper</a>
+            <details>
+              <summary>BibTeX</summary>
+<pre class="bib">@article{kim2026steering,
+  title   = {Steering Diffusion Models via Class-Contrastive Influence
+             for Few-Shot Medical Classification},
+  author  = {Kim, Jeeyung and Esmaeili, Erfan and Qiu, Qiang},
+  journal = {arXiv preprint arXiv:2607.12464},
+  year    = {2026}
+}</pre>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <p class="small muted" style="margin-top:16px">
+        Earlier work: 7 papers in theoretical physics on asymptotic symmetries, electromagnetic gauge fields, general relativity,
+        celestial holography, and p-form symmetries. See <a href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ">Google Scholar</a>.
+      </p>
+    </div>
+  </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="mx-auto max-w-6xl px-4 py-12">
-    <div class="flex items-end justify-between">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Selected Projects</h2>
-      <a class="text-sm hover:opacity-80" href="https://github.com/erfanili" target="_blank" rel="noreferrer">View all →</a>
-    </div>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">LLM Inference Benchmarking</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Comparing LLM inference engines (vLLM, TGI) in latency and throughput.</p>
-        <!-- <ul class="mt-3 text-xs space-y-1">
-          <li>• <strong>p95 ↓ 25%</strong> @ 50 RPS via continuous batching + KV reuse</li>
-          <li>• <strong>Cost ↓ 40%</strong> with INT8/INT4; ≤2% quality delta</li>
-        </ul> -->
-        <div class="mt-4 flex gap-2 text-xs">
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">vLLM</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">TGI</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">FastAPI</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">Docker</span>
-        </div>
-        <div class="mt-4 flex gap-3">
-          <a class="text-sm underline" href="https://github.com/erfanili/inference-optimizaiton-benchmark" target="_blank" rel="noreferrer">Code</a>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">RAG QA Engine</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Deployed a retrieval-augmented QA engine focused on a history topic.</p>
-        <ul class="mt-3 text-xs space-y-1">
-          <li>• Database hosted on Milvus Cloud. Two-stage RAG (reranking).</li>
-          <li>• Local version used SPLADE and open source models. The deployed version used OpenAI API for text embeddings and llm inference.</li>
-        </ul>
-        <div class="mt-4 flex gap-2 text-xs">
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">Milvus</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">OpenAI text encoder</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">Streamlit</span>
-        </div>
-        <div class="mt-4 flex gap-3">
-          <a class="text-sm underline" href="https://github.com/erfanili/rag-wwi-history-research" target="_blank" rel="noreferrer">Code</a>
-          <a class="text-sm underline" href="https://ask-dan-wwi.streamlit.app/" target="_blank" rel="noreferrer">Demo</a>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass hover:shadow">
-        <h3 class="font-semibold">QLoRA adaptation</h3>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Adapting open LLMs with LoRA and QLoRA for text summarization.</p>
-        <ul class="mt-3 text-xs space-y-1">
-          <li>• Multi-GPU training</li>
-          <li>• Low Rank Adaptation of quantized models</li>
-        </ul>
-        <div class="mt-4 flex gap-2 text-xs">
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">QLoRA</span>
-          <span class="tag border-slate-300/70 dark:border-slate-700/70">Llama</span>
-        </div>
-        <div class="mt-4 flex gap-3">
-          <a class="text-sm underline" href="https://github.com/erfanili/qlora-adaptation" target="_blank" rel="noreferrer">Code</a>
-          <!-- <a class="text-sm underline" href="#" target="_blank" rel="noreferrer">Report</a> -->
-        </div>
-      </article>
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects &amp; Engineering</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>LLM Model-Identification Platform</h3>
+          <p>Built at Purdue's Rosen Center for Advanced Computing (May–Dec 2025). Users identify anonymized LLMs from their responses, with prompt-controlled difficulty. Used in Purdue's cybersecurity course (CNIT 27000).</p>
+          <div class="tags"><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Kubernetes</span></div>
+        </article>
+        <article class="card">
+          <h3>Retrieval-Augmented QA over Long Documents</h3>
+          <p>Hybrid dense + sparse multi-path retrieval with open-source LLMs for grounded answers over SEC filings. Containerized FastAPI backend.</p>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">Hybrid retrieval</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
+        </article>
+        <article class="card">
+          <h3>QLoRA Adaptation for Dialogue Summarization</h3>
+          <p>Fine-tuned Llama models on SAMSum with LoRA/QLoRA on multiple GPUs. Evaluated with ROUGE and BERTScore.</p>
+          <div class="tags"><span class="tag">QLoRA</span><span class="tag">Llama</span><span class="tag">PEFT</span></div>
+          <div class="card-links"><a href="https://github.com/erfanili/qlora-summarization">Code</a></div>
+        </article>
+      </div>
+      <p class="small muted" style="margin-top:14px">More on <a href="https://github.com/erfanili">GitHub</a>, including reproductions of nanochat and micrograd and LLM inference / quantization benchmarks.</p>
     </div>
   </section>
 
-<!-- PAPERS -->
-
-  <section id="papers" class="mx-auto max-w-6xl px-4 py-12">
-    <div class="flex items-end justify-between">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Papers & Preprints</h2>
-      <a class="text-sm hover:opacity-80" href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AKzYXQ3Q44jifa3Q1b7V_fpVO9K5hlqaDJCOb1pYpDx_SCOTNOFOX_YZVWE7iKRYkeDn4TkKrhIV0U1nEtiOmw&user=7cQiKTIAAAAJ" target="_blank" rel="noreferrer">View all →</a>
-    </div>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <!-- Paper 1 -->
-      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass">
-        <h4 class="font-semibold">
-          Text Embedding is Not All You Need: Attention Control for Text-to-Image
-          Semantic Alignment with Text Self-Attention Maps (CVPR 2025)
-        </h4>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-          Using text-encoder information to optimize cross-attention layers in Stable Diffusion.
-          Our training-free attention control method improves text-image alignment.
-        </p>
-        <div class="mt-3 flex gap-3 text-sm">
-          <a class="underline" href="https://t-sam-diffusion.github.io/" target="_blank">Project page</a>
-          <a class="underline" href="https://arxiv.org/pdf/2411.15236" target="_blank">PDF</a>
+  <!-- BACKGROUND -->
+  <section id="background">
+    <div class="wrap">
+      <h2>Background</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="muted small" style="text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Experience</h3>
+          <div class="entry">
+            <div class="entry-head"><strong>Graduate Research Assistant, Purdue ECE</strong><span class="when">2022 – present</span></div>
+            <div class="sub">Generative models &amp; representation learning · Advisor: Qiang Qiu</div>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><strong>Rosen Center for Advanced Computing, Purdue</strong><span class="when">May – Dec 2025</span></div>
+            <div class="sub">Built the LLM Model-Identification Platform for teaching</div>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><strong>Postdoctoral Researcher, IPM</strong><span class="when">2020 – 2022</span></div>
+            <div class="sub">Theory of wide neural networks · Tehran, Iran</div>
+          </div>
         </div>
-      </article>
-
-      <!-- Paper 2 -->
-      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass">
-        <h4 class="font-semibold">
-          Generate What Matters: Steering Diffusion Models for Targeted Data Generation
-          to Improve Classification (ICLR 2026 under review)
-        </h4>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-          Steering diffusion models to generate effective samples that improve ViT classification accuracy
-          in low-data medical domains.
-        </p>
-        <div class="mt-3 flex gap-3 text-sm">
-          <a class="underline" href="https://openreview.net/pdf?id=SJVaCEgXku" target="_blank">PDF</a>
+        <div>
+          <h3 class="muted small" style="text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Education</h3>
+          <div class="entry">
+            <div class="entry-head"><strong>Ph.D., Electrical &amp; Computer Engineering</strong><span class="when">2022 – present</span></div>
+            <div class="sub">Purdue University</div>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><strong>Ph.D., Physics</strong><span class="when">2015 – 2020</span></div>
+            <div class="sub">Institute for Research in Fundamental Sciences (IPM) · asymptotic symmetries</div>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><strong>M.Sc. &amp; B.Sc., Physics</strong><span class="when">2009 – 2015</span></div>
+            <div class="sub">Sharif University of Technology</div>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><strong>Gold Medal, International Olympiad on Astronomy and Astrophysics</strong><span class="when">2007</span></div>
+          </div>
         </div>
-      </article>
-   
-  
+      </div>
 
-  <!-- ===================== -->
-  <!-- Physics Papers Section -->
-  <!-- ===================== -->
-
-
-    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white/50 dark:bg-slate-900/50 glass">
-        <h4 class="font-semibold">
-          7 papers in theoretical physics
-        </h4>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-        On electromagnetic gauge fields,
-        general relativity, celestial holography, and p-form symmetries.
-      </p>
-      <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AKzYXQ3Q44jifa3Q1b7V_fpVO9K5hlqaDJCOb1pYpDx_SCOTNOFOX_YZVWE7iKRYkeDn4TkKrhIV0U1nEtiOmw&user=7cQiKTIAAAAJ"
-         target="_blank"
-         class="inline-block mt-3 text-sm underline">
-        View on Google Scholar →
-      </a>
+      <h3 class="muted small" style="text-transform:uppercase;letter-spacing:.06em;margin:28px 0 10px">Skills</h3>
+      <dl class="skills">
+        <dt>ML</dt><dd>PyTorch, Hugging Face (Diffusers, Transformers, PEFT), diffusion models, RL fine-tuning, LoRA/QLoRA, vLLM</dd>
+        <dt>Engineering</dt><dd>Python, Bash, SQL, Docker, Kubernetes, GitHub Actions, GCP, Linux / multi-GPU servers</dd>
+        <dt>Mathematical</dt><dd>Perturbation theory, statistical field theory, probability, optimization</dd>
+      </dl>
     </div>
-  </div>
-</section>
-
-
-
-<section id="skills" class="mx-auto max-w-6xl px-4 py-12">
-  <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
-
-  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-
- 
-    <!-- 2) Modeling & Research -->
-    <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-      <h4 class="font-semibold">Machine Learning Methods</h4>
-      <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
-        <li>Transformer models; Diffusion models</li>
-        <li>LLM evaluations; prompt engineering</li>
-        <li>Retrieval augmented generation</li>
-        <li>Reinforcement learning</li>
-          <li>Instruction tuning, SFT, RLHF</li>
-        <li>PEFT/LoRA/QLoRA</li>
-
-      </ul>
-    </div>
-
-
-    <!-- 4) Systems & Tools -->
-    <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-      <h4 class="font-semibold">Systems & Tools</h4>
-      <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
-        <li>PyTorch; HF Transformers & Diffusers</li>
-        <li>FastAPI; Docker; basic Kubernetes</li>
-        <li>vLLM/TGI for quick serving prototypes</li>
-        <li>Python (fluent), Bash; learning C++/CUDA</li>
-      </ul>
-    </div>
-
-        <!-- 3) Evaluation & Data -->
-    <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-      <h4 class="font-semibold">Research & Analysis</h4>
-      <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
-        <li>Probability and statistics</li>
-        <li>Mathematical modeling</li>
-        <li>Strong analytical thinking;</li>
-        <li>First principles thinking</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
-    <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white/50 dark:bg-slate-900/50 glass">
-      <h2 class="text-2xl font-extrabold">Contact</h2>
-      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Email: <a class="underline" href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></p>
-    </div>
-    <footer class="mt-10 pb-12 text-center text-xs text-slate-500">© <span id="y"></span> Erfan Esmaeili</footer>
   </section>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="y">2026</span> Erfan Esmaeili · <a href="mailto:erfan.esmaeili.f@gmail.com">erfan.esmaeili.f@gmail.com</a> · <a href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></span>
+    <span><a href="til.html">Things I learned</a> · <a href="longreads.html">Long reads</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
