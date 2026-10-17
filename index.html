@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="Zeb9ndOs88WIw9Iwmd9qCJ8W0sd1vbXi7b1zeluoHQU">
-  <title>Erfan Esmaeili — Generative Models Research, Purdue</title>
-  <meta name="description" content="Erfan Esmaeili is a Ph.D. student in ECE at Purdue (advisor: Qiang Qiu) working on controllable generative models — attention control for text-to-image diffusion (CVPR 2025) and RL fine-tuning of diffusion models. Seeking research scientist internships.">
+  <title>Erfan Esmaeili — RL Post-Training of Generative Models, Purdue</title>
+  <meta name="description" content="Erfan Esmaeili is a Ph.D. student in ECE at Purdue (advisor: Qiang Qiu) working on post-training and reinforcement learning for generative models — RL fine-tuning of diffusion models with learned rewards, now extending to LLMs. Seeking research scientist internships for Summer 2027.">
   <link rel="canonical" href="https://www.erfanili.dev/">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Erfan Esmaeili — Generative Models Research">
-  <meta property="og:description" content="Ph.D. student at Purdue working on controllable diffusion models (CVPR 2025). Seeking research scientist internships.">
+  <meta property="og:title" content="Erfan Esmaeili — RL Post-Training of Generative Models">
+  <meta property="og:description" content="Ph.D. student at Purdue working on RL post-training of generative models (diffusion and LLMs). Seeking research scientist internships.">
   <meta property="og:url" content="https://www.erfanili.dev/">
   <meta property="og:image" content="https://www.erfanili.dev/images/portrait.jpg">
   <meta name="twitter:card" content="summary">
@@ -35,7 +35,7 @@
       { "@type": "Organization", "name": "Institute for Research in Fundamental Sciences (IPM)" },
       { "@type": "CollegeOrUniversity", "name": "Sharif University of Technology" }
     ],
-    "knowsAbout": ["Diffusion models", "Text-to-image generation", "Reinforcement learning", "Generative models", "Deep learning theory"],
+    "knowsAbout": ["Reinforcement learning", "Post-training", "Diffusion models", "Large language models", "Reward design", "Generative models"],
     "sameAs": [
       "https://scholar.google.com/citations?user=7cQiKTIAAAAJ",
       "https://github.com/erfanili",
@@ -53,9 +53,7 @@
       <a href="#news" class="opt">News</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
       <a href="#background" class="opt">Background</a>
-      <a href="til.html">Notes</a>
     </nav>
   </div>
 </header>
@@ -73,16 +71,16 @@
         </div>
 
         <p>
-          I work on <strong>controllable generative models</strong>. My research asks how to steer diffusion models
-          toward what we actually want, both at inference time and through training. Recent work includes
-          training-free <strong>attention control for text-to-image alignment</strong> (CVPR 2025, co-first author) and
-          <strong>reinforcement-learning fine-tuning of diffusion models</strong> with gradient-based influence rewards,
-          so that the synthetic data they generate measurably helps downstream classifiers.
+          I work on <strong>post-training generative models with reinforcement learning</strong>: designing rewards
+          that capture what we actually want from a model, and optimizing toward them. My recent work
+          fine-tunes <strong>diffusion models with RL</strong> using gradient-based influence rewards, so that the
+          synthetic data they generate measurably helps downstream classifiers. I am now carrying the same questions
+          (reward design, credit assignment, reward hacking) over to <strong>RL post-training of LLMs</strong>.
         </p>
         <p>
-          Before machine learning, I earned a Ph.D. in theoretical physics and did a postdoc studying wide neural
-          networks near the infinite-width limit with perturbation theory. I take ideas from theory all the way to
-          working PyTorch implementations.
+          I also study how attention works inside generative models, including training-free
+          <strong>attention control for text-to-image alignment</strong> (CVPR 2025, co-first author).
+          Before machine learning, I earned a Ph.D. in theoretical physics.
         </p>
 
         <div class="callout">
@@ -126,22 +124,22 @@
       <h2>Research</h2>
       <div class="themes">
         <div class="theme">
-          <div class="kicker">Inference-time control</div>
-          <h3>Attention control for text-to-image alignment</h3>
-          <p>Cross-attention in diffusion models ignores word relations that the text encoder's self-attention already captures.
-             Steering cross-attention maps toward that structure, with no training, fixes attribute binding and missing objects.</p>
-        </div>
-        <div class="theme">
-          <div class="kicker">Training-time control</div>
-          <h3>RL fine-tuning for useful synthetic data</h3>
+          <div class="kicker">RL post-training · Diffusion</div>
+          <h3>Learned rewards for useful synthetic data</h3>
           <p>Class-Contrastive Influence scores how much a generated sample helps a downstream classifier.
              Used as an RL reward, it fine-tunes diffusion models to produce data that improves few-shot medical classification.</p>
         </div>
         <div class="theme">
-          <div class="kicker">Theory</div>
-          <h3>Wide networks beyond the infinite-width limit</h3>
-          <p>Perturbative, field-theory-style computation of finite-width corrections to the near-Gaussian distribution of
-             representations in deep MLPs, following Roberts, Yaida &amp; Hanin.</p>
+          <div class="kicker">RL post-training · LLMs <span class="muted">(in progress)</span></div>
+          <h3>Reward design for LLM agents</h3>
+          <p>GRPO post-training of LLMs on multi-turn tool use. The question carried over from diffusion:
+             which rewards produce the behavior we want, and which ones get hacked?</p>
+        </div>
+        <div class="theme">
+          <div class="kicker">Attention in generative models</div>
+          <h3>Attention control for text-to-image alignment</h3>
+          <p>Cross-attention in diffusion models ignores word relations that the text encoder's self-attention already captures.
+             Steering cross-attention maps toward that structure, with no training, fixes attribute binding and missing objects.</p>
         </div>
       </div>
     </div>
@@ -152,6 +150,29 @@
     <div class="wrap">
       <h2>Publications</h2>
       <p class="small muted">* equal contribution · Full list on <a href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ">Google Scholar</a></p>
+
+      <article class="pub">
+        <a class="pub-thumb text" href="https://arxiv.org/abs/2607.12464">Diffusion model → synthetic samples → influence reward → RL update</a>
+        <div>
+          <h3>Steering Diffusion Models via Class-Contrastive Influence for Few-Shot Medical Classification</h3>
+          <div class="authors">Jeeyung Kim, <b>Erfan Esmaeili</b>, Qiang Qiu</div>
+          <div class="venue"><span class="badge">arXiv 2026</span>arXiv:2607.12464</div>
+          <p class="tldr">A gradient-based influence score used as an RL reward to fine-tune diffusion models, improving accuracy and robustness over diffusion-augmentation baselines on few-shot medical imaging benchmarks.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2607.12464">Paper</a>
+            <details>
+              <summary>BibTeX</summary>
+<pre class="bib">@article{kim2026steering,
+  title   = {Steering Diffusion Models via Class-Contrastive Influence
+             for Few-Shot Medical Classification},
+  author  = {Kim, Jeeyung and Esmaeili, Erfan and Qiu, Qiang},
+  journal = {arXiv preprint arXiv:2607.12464},
+  year    = {2026}
+}</pre>
+            </details>
+          </div>
+        </div>
+      </article>
 
       <article class="pub">
         <a class="pub-thumb" href="https://t-sam-diffusion.github.io/">
@@ -180,59 +201,9 @@
         </div>
       </article>
 
-      <article class="pub">
-        <a class="pub-thumb text" href="https://arxiv.org/abs/2607.12464">Diffusion model → synthetic samples → influence reward → RL update</a>
-        <div>
-          <h3>Steering Diffusion Models via Class-Contrastive Influence for Few-Shot Medical Classification</h3>
-          <div class="authors">Jeeyung Kim, <b>Erfan Esmaeili</b>, Qiang Qiu</div>
-          <div class="venue"><span class="badge">arXiv 2026</span>arXiv:2607.12464</div>
-          <p class="tldr">A gradient-based influence score used as an RL reward to fine-tune diffusion models, improving accuracy and robustness over diffusion-augmentation baselines on few-shot medical imaging benchmarks.</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2607.12464">Paper</a>
-            <details>
-              <summary>BibTeX</summary>
-<pre class="bib">@article{kim2026steering,
-  title   = {Steering Diffusion Models via Class-Contrastive Influence
-             for Few-Shot Medical Classification},
-  author  = {Kim, Jeeyung and Esmaeili, Erfan and Qiu, Qiang},
-  journal = {arXiv preprint arXiv:2607.12464},
-  year    = {2026}
-}</pre>
-            </details>
-          </div>
-        </div>
-      </article>
-
       <p class="small muted" style="margin-top:16px">
-        Earlier work: 7 papers in theoretical physics on asymptotic symmetries, electromagnetic gauge fields, general relativity,
-        celestial holography, and p-form symmetries. See <a href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ">Google Scholar</a>.
+        Earlier work: 7 papers in theoretical physics, listed on <a href="https://scholar.google.com/citations?user=7cQiKTIAAAAJ">Google Scholar</a>.
       </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="wrap">
-      <h2>Projects &amp; Engineering</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>LLM Model-Identification Platform</h3>
-          <p>Built at Purdue's Rosen Center for Advanced Computing (May–Dec 2025). Users identify anonymized LLMs from their responses, with prompt-controlled difficulty. Used in Purdue's cybersecurity course (CNIT 27000).</p>
-          <div class="tags"><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Kubernetes</span></div>
-        </article>
-        <article class="card">
-          <h3>Retrieval-Augmented QA over Long Documents</h3>
-          <p>Hybrid dense + sparse multi-path retrieval with open-source LLMs for grounded answers over SEC filings. Containerized FastAPI backend.</p>
-          <div class="tags"><span class="tag">RAG</span><span class="tag">Hybrid retrieval</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
-        </article>
-        <article class="card">
-          <h3>QLoRA Adaptation for Dialogue Summarization</h3>
-          <p>Fine-tuned Llama models on SAMSum with LoRA/QLoRA on multiple GPUs. Evaluated with ROUGE and BERTScore.</p>
-          <div class="tags"><span class="tag">QLoRA</span><span class="tag">Llama</span><span class="tag">PEFT</span></div>
-          <div class="card-links"><a href="https://github.com/erfanili/qlora-summarization">Code</a></div>
-        </article>
-      </div>
-      <p class="small muted" style="margin-top:14px">More on <a href="https://github.com/erfanili">GitHub</a>, including reproductions of nanochat and micrograd and LLM inference / quantization benchmarks.</p>
     </div>
   </section>
 
@@ -245,7 +216,7 @@
           <h3 class="muted small" style="text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Experience</h3>
           <div class="entry">
             <div class="entry-head"><strong>Graduate Research Assistant, Purdue ECE</strong><span class="when">2022 – present</span></div>
-            <div class="sub">Generative models &amp; representation learning · Advisor: Qiang Qiu</div>
+            <div class="sub">RL post-training of generative models · Advisor: Qiang Qiu</div>
           </div>
           <div class="entry">
             <div class="entry-head"><strong>Rosen Center for Advanced Computing, Purdue</strong><span class="when">May – Dec 2025</span></div>
@@ -278,9 +249,8 @@
 
       <h3 class="muted small" style="text-transform:uppercase;letter-spacing:.06em;margin:28px 0 10px">Skills</h3>
       <dl class="skills">
-        <dt>ML</dt><dd>PyTorch, Hugging Face (Diffusers, Transformers, PEFT), diffusion models, RL fine-tuning, LoRA/QLoRA, vLLM</dd>
+        <dt>ML</dt><dd>PyTorch, RL fine-tuning of generative models, Hugging Face (Diffusers, Transformers, PEFT), vLLM, LoRA</dd>
         <dt>Engineering</dt><dd>Python, Bash, SQL, Docker, Kubernetes, GitHub Actions, GCP, Linux / multi-GPU servers</dd>
-        <dt>Mathematical</dt><dd>Perturbation theory, statistical field theory, probability, optimization</dd>
       </dl>
     </div>
   </section>
@@ -290,7 +260,6 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© <span id="y">2026</span> Erfan Esmaeili · <a href="mailto:erfan.esmaeili.f@gmail.com">erfan.esmaeili.f@gmail.com</a> · <a href="mailto:efakhabi@purdue.edu">efakhabi@purdue.edu</a></span>
-    <span><a href="til.html">Things I learned</a> · <a href="longreads.html">Long reads</a></span>
   </div>
 </footer>
 
